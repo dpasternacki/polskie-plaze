@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="scripts/style.css">
+    <link rel='shortcut icon' type='image/png' href='source/favicon.png'/>
+
+    <title>Polskie morze</title>
+</head>
+<body>
+    <section class='showcase'>
+    
+      <header>
+        <div class='logo'>
+          <img height="200" width="200" src="source/Logo.png">
+        </div>
+        <div class='toggle' ></div>
+        
+    </header>
+
+    <video id='vid' muted loop autoplay>
+        <source src="source/plaza.mp4" type="video/mp4">
+    </video>
+
+    <div class="overlay"></div>
+
+            <div class='text'>
+                <h2>Ciekawostki o polskich plażach</h2>
+
+                <h4>Poniżej znajdziesz ciekawostki o polskich plażach</h4>
+            </div>
+            <div id="ModalC1" class="modalC1">
+
+                <div class="modal-contentC1">
+                    <div class="modal-headerC1">
+                        <span class="closeC1">&times;</span>
+                        <h2>Ciekawostka 1</h2>
+                      </div>
+                      <div class="modal-bodyC1"> <!-- pod tym divem wpisujesz jakies ciekawostki o plazach(tylko nie uzywaj <center> bo zabije) -->
+                        <p> Morze Bałtyckie połączone jest z Morzem Białym oraz Morzem Północnym.</p>
+                        
+                      </div>
+                </div>
+              
+              </div>
+              <div id="ModalC2" class="modalC2">
+
+                <div class="modal-contentC2">
+                    <div class="modal-headerC2">
+                        <span class="closeC2">&times;</span>
+                        <h2>Ciekawostka 2</h2>
+                      </div>
+                      <div class="modal-bodyC2"> <!-- pod tym divem wpisujesz jakies ciekawostki o plazach(tylko nie uzywaj <center> bo zabije) -->
+                        <p>Morze Bałtyckie powstało około 15 000 lat temu i jest najmłodszym morzem. Powstało na skutek topnienia lodowców.</p>
+                        
+                      </div>
+                </div>
+              
+              </div>
+              <div id="ModalC3" class="modalC3">
+
+                <div class="modal-contentC3">
+                    <div class="modal-headerC3">
+                        <span class="closeC3">&times;</span>
+                        <h2>Ciekawostka 3</h2>
+                      </div>
+                      <div class="modal-body3"> <!-- pod tym divem wpisujesz jakies ciekawostki o plazach(tylko nie uzywaj <center> bo zabije) -->
+                        <p>Największe rzeki wpływające do Morza Bałtyckiego to Odra, Wisła, Niemen, Dźwina i Newa.</p>
+                        
+                      </div>
+                </div>
+              
+              </div>
+              <div id="ModalC4" class="modalC4">
+
+                <div class="modal-contentC4">
+                    <div class="modal-headerC4">
+                        <span class="closeC4">&times;</span>
+                        <h2>Ciekawostka 4</h2>
+                      </div>
+                      <div class="modal-bodyC4"> <!-- pod tym divem wpisujesz jakies ciekawostki o plazach(tylko nie uzywaj <center> bo zabije) -->
+                        <p>Powierzchnia linii brzegowej morza wynosi około 8 000 km</p>
+                        
+                      </div>
+                </div>
+              
+              </div>
+              <div id="ModalC5" class="modalC5">
+
+                <div class="modal-contentC5">
+                    <div class="modal-headerC5">
+                        <span class="closeC5">&times;</span>
+                        <h2>Ciekawostka 5</h2>
+                      </div>
+                      <div class="modal-body5"> <!-- pod tym divem wpisujesz jakies ciekawostki o plazach(tylko nie uzywaj <center> bo zabije) -->
+                        <p>W Morzu Bałtyckim zatopionych jest ponad 100 wraków statków. Wiele z nich, stanowi pomnik historyczny, dlatego zbliżanie oraz eksploatacja wraków jest zabroniona.
+                           W przypadku złamania przepisów, stosowane są kary finansowe, a w niektórych przypadkach nawet kara pozbawienia wolności.</p>
+                        
+                      </div>
+                </div>
+              
+              </div>
+
+              <div id="ModalC6" class="modalC6">
+
+                <div class="modal-contentC6">
+                    <div class="modal-headerC6">
+                        <span class="closeC6">&times;</span>
+                        <h2>Ciekawostka 6</h2>
+                      </div>
+                      <div class="modal-body6"> <!-- pod tym divem wpisujesz jakies ciekawostki o plazach(tylko nie uzywaj <center> bo zabije) -->
+                        <p>Gdańsk oraz Gdynia, to największe polskie miasta, które zalicza się do największych miast Bałtyku. 
+                          Są to również miasta najchętniej odwiedzane przez turystów z całego świata.
+                          Aby nie nikt nie nudził się w tych pięknych, nadmorskich miejscowościach, prócz licznych atrakcji turystycznych,
+                           organizowane są tu liczne imprezy okolicznościowe, na przykład Jarmark Dominikański w Gdańsku, który jest popularnym wydarzeniem,
+                            ściągającym na ulice Gdańska setki tysięcy turystów.</p>
+                        
+                      </div>
+                </div>
+              
+              </div>
+                <div class = "t1" id = "t1"'>
+                    <button id='C1' class='C1'></button>
+                    <h4 class="img-text">CIEKAWOSTKA 1</h4>
+                    <audio id='beepG' preload="auto">
+                      <source src='source/beep.mp3'>
+                    </audio>
+                 </div>
+
+                <div class = "t2" id = "t2">
+                    <button id='C2' class='C2'></button>
+                    <h4 class="img-text">CIEKAWOSTKA 2</h4>
+                    <audio id='beepS' preload="auto">
+                      <source src='source/beep.mp3'>
+                    </audio>
+                </div>
+                    
+                <div style ="clear:both"></div>
+                    
+                <div class = "t3" id = "t3">
+                    <button id='C3' class='C3'></button>
+                    <h4 class="img-text">CIEKAWOSTKA 3</h4>
+                    <audio id='beepH' preload="auto">
+                      <source src='source/beep.mp3'>
+                    </audio>
+                </div>
+                    
+                <div class = "t4" id = "t4">
+                    <button id='C4' class=C4'></button>
+                    <h4 class="img-text">CIEKAWOSTKA 4</h4>
+                    <audio id='beepD' preload="auto">
+                      <source src='source/beep.mp3'>
+                    </audio>
+                </div>
+
+                <div style ="clear:both"></div>
+
+                <div class = "t5" id = "t5">
+                   <button id='C5' class='C5'></button>
+                   <h4 class="img-text">CIEKAWOSTKA 5</h4>
+                   <audio id='beepJ' preload="auto">
+                    <source src='source/beep.mp3'>
+                  </audio>
+                </div>
+
+                <div class = "t6" id = "t6">
+                   <button id='C6' class='C6'></button>
+                   <h4 class="img-text">CIEKAWOSTKA 6</h4>
+                   <audio id='beepK' preload="auto">
+                    <source src='source/beep.mp3'>
+                  </audio>
+                </div>
+
+                <a href="https://www.facebook.com" target="_blank"><img id='fb' height="60" width="60" src="source/fb.png" alt='fb'></a>
+                <a href="https://www.instagram.com" target="_blank"><img id='ig' height="60" width="60" src="source/ig.png" alt='fb'></a>
+                <a href="https://twitter.com/?lang=pl" target="_blank"><img id='tw' height="60" width="60" src="source/tw.png" alt='fb'></a>
+</section>    
+            <div class="menu">
+                <ul>
+                    <li><a href="../index.html">Strona Główna</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href="Ciekawostki.html">Ciekawostki</a></li>
+                </ul>
+            </div>   
+</body>
+<script src="scripts/script.js"></script>
+</html>
